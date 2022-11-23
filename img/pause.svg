@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Pause_Icon" data-name="Pause Icon" class="cls-1" d="M90.016,399.016h2a1,1,0,0,0,1-1v-13a1,1,0,0,0-1-1h-2a1,1,0,0,0-1,1v13A1,1,0,0,0,90.016,399.016Zm7-14v13a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1v-13a1,1,0,0,0-1-1h-2A1,1,0,0,0,97.016,385.016Z" transform="translate(-89.031 -384)"/>
+</svg>

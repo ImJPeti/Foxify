@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Volume_Icon" data-name="Volume Icon" class="cls-1" d="M616.041,383.138L612,387.02h-3a1.01,1.01,0,0,0-1,1v5.952a1.045,1.045,0,0,0,1,1.044h3l4.062,3.894s0.938,0.549.938-1.078V384.1C617,382.455,616.041,383.138,616.041,383.138Z" transform="translate(-608 -383)"/>
+</svg>
