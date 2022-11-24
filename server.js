@@ -48,7 +48,7 @@ conn.connect((err) => {
 app.use(express.json());
 app.use("/components", express.static(path.join(__dirname, "/components")));
 app.use("/static", express.static(path.join(__dirname, "/public")));
-app.set("/songs", express.static(path.join(__dirname, "/songs")));
+app.use("/songs", express.static(path.join(__dirname, "/songs")));
 app.set("assets", path.join(__dirname, "/public/assets"));
 app.use("/img", express.static(path.join(__dirname, "/img")))
 app.get("/style.css", (req, res) => {
@@ -146,8 +146,9 @@ app.post("/user", (req, res) => {
   });
 });
 
+
 app.get("/api/playlist/all", (req, res) => {
-  conn.query("SELECT * FROM songs", function (err, liked) {
+  conn.query("SELECT * FROM songs ORDER BY id DESC", function (err, liked) {
     if (err) {
       res.status(404).send({ message: err });
       return;

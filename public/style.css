@@ -9,7 +9,7 @@ body{
   background-color: black;
 }
 
-.musicPlayer{
+#musicPlayer{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -181,7 +181,7 @@ button{
   flex-direction: row;
 }
 .main-container .playlists{
-  margin-left: 3%;
+  margin-left: 5%;
   margin-top: 1%;
   width: 17%;
   height: 300px;
@@ -190,30 +190,33 @@ button{
   cursor: pointer;
 }  
 
-.main-container #center{
+#center{
   margin-left: 6%;
-  width: 100%;
-  height: fit-content;
+  width: 62%;
+  clear: both;
+  margin-bottom: 10%;
 }
-.main-container .image-name{
+.image-name{
   display: flex;
   flex-direction: row;
 }
-.main-container .name-title{
+.name-title{
   display: flex;
   flex-direction: column;
   margin-left: 3%;
 }
 
-.main-container #singer-name{
+#singer-name{
   width: 100%;
   margin-bottom: 0;
+  font-weight: bold;
+  color: cadetblue;
 }
-.main-container #title{
+#title{
   width: 100%;
   margin-top: 0;
 }
-.main-container .songs-list{
+.songs-list{
   background-color: #262626;
   width: 70%;
   margin-top: 2%;
@@ -221,7 +224,7 @@ button{
   height: 70px;
   border-radius: 20px;
 }
-.main-container #cover{
+#cover{
   border-radius: 10px;
   width: 60px;
   height: 60px;
@@ -235,4 +238,11 @@ button{
   margin-right: 13%;
   margin-top: 2.4%;
   margin-left: auto;
+}
+
+#closePlayer{
+  position: absolute;
+  right: 4%;
+  transform: rotate(90deg);
+  cursor: pointer;
 }

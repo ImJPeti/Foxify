@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script defer src="/app.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    <script defer src="/script.js"></script>
    <link rel="stylesheet" href="/style.css">
   <title>Playlist</title>
@@ -21,19 +22,17 @@
   <div class="main-container">
     <div class="left-menu">
       <i class="fa-thin fa-house"></i>
-      <p>home</p>
+      <p id="home">home</p>
       <p>home</p>
       <p>home</p>
     </div>
     <div id="center">
-      <h1 id="h1">Recently Added</h1>
+      <h1 id="playlistName"></h1>
     </div>
-
-
   </div>
 
  <div class="musicPlayer">
-  <audio id="player" src="../genesis.mp3"></audio>
+  <audio id="player"></audio>
   <div class="controller">
     <img src="../img/music-placeholder.png" id="thumb"></img>
     <div class="about">
