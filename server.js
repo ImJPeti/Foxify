@@ -1,4 +1,4 @@
-const port = 5500;
+const port = 5000;
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 const conn = mysql.createConnection({
-  host: "127.0.0.1",
+  host: "localhost",
   user: "root",
   password: "password1",
   database: "foxify",
@@ -102,7 +102,7 @@ app.post("/auth", (req, res) => {
 
   if (username && password) {
     conn.query(
-      `SELECT * FROM users WHERE username = ? AND pass = ?`,
+      `SELECT * FROM user WHERE name = ? AND password = ?`,
       [username, password],
       (error, result, fields) => {
         if (error) {

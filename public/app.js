@@ -26,6 +26,7 @@ let home = document.getElementById("home");
 fetch("/home")
   .then((response) => response.json())
   .then((obj) => {
+    console.log(obj)
     if (obj.username) {
       username.innerHTML = obj.username;
     } else {
